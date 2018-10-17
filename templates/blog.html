@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Build a Blog</h1>
+
+<hr>
+
+        <ul>
+            {% for x in blogs %}
+            <li>
+            <a href="/singleblog"></a>{{x.title}}
+            {{x.body}}
+            <hr>
+            {% endfor %}
+        </li>
+        </ul>
+    
+
+    <hr />
+
+    
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
